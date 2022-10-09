@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block body_block %}
+<div class="jumbotron">
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete?</p>
+        <input class="btn btn-danger" type="submit" value="Confirm">
+        <a class="btn btn-primary" href="..">Go back</a>
+    </form>
+</div>
+<p class="last_p"></p>
+{% endblock %}

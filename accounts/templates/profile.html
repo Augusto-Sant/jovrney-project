@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body_block %}
+  <div class="jumbotron p-5 rounded-lg m-3 shadow-sm">
+    <h1 align="center">PROFILE</h1>
+    <h1>{{user.username}}</h1>
+    <h4 class="text-muted">{{user.email}}</h4>
+  </div>
+  <div class="jumbotron p-5 rounded-lg m-3 shadow-sm">
+    <h5 class="text-muted">Journals Limit: {{profile.journal_limit}}</h5>
+    <h5 class="text-muted">Pages per journal limit: {{profile.pages_per_journal_limit}}</h5>
+  </div>
+  <p class="last_p"></p>
+{% endblock %}

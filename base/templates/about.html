@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_block %}
+<div class="jumbotron">
+    <h1 class="border-bottom border-dark">About</h1>
+    <p>Hello i'm a student from Brazil, you can see my projects on <a href="https://github.com/Augusto-Sant">Github</a>
+    </p>
+    <p>This is a website for journaling and also a REST API of your journals, created for learning purposes, website and
+        api made with: </p>
+    <ul>
+        <li>Python 3</li>
+        <li>Django</li>
+        <li>Django Rest Framework</li>
+    </ul>
+    <p>all passwords are safe under Argon2 criptography, no passwords are left visible.</p>
+    <p>all emails will not be used outside this website.</p>
+    <p>Thanks for seeing it!</p>
+</div>
+<p class="last_p"></p>
+{% endblock %}

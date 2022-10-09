@@ -1,0 +1,142 @@
+.jumbotron {
+    background-color: #F2F2F2;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: .3rem;
+    font-size: large;
+}
+
+.jumbotronborder {
+  background-color: #F2F2F2;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border: solid #639AA6 5px;
+  border-radius: .3rem;
+  font-size: large;
+}
+
+.navbar{
+    background-color: #639AA6;
+}
+
+.content_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.url_text{
+    color: brown;
+}
+.journal{
+    background-color: #639AA6;
+    border: solid #639AA6 5px;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: large;
+    border-radius: .3rem;
+    /* background: repeating-linear-gradient(
+        180deg,
+        #F2F2F2,
+        #dadada 10px,
+        #dadada 10px,
+        #dadada 20px
+        ); */
+}
+
+.buttonprof{
+  margin-right: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+}
+
+#delete_button{
+  float:right;
+  text-align:right;
+  margin-left: 80px;
+  margin-right: 30px;
+}
+
+.last_p{
+    min-height: 85vh;
+}
+
+#navbar_index{
+  background-color: #F2F2F2;
+}
+
+/* FOOTER ########################### */
+
+.text-justify{
+    text-align: justify;
+}
+
+.site-footer
+{
+  background-color: #639AA6;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:black;
+  min-height: 5vh;
+}
+.site-footer hr
+{
+  border-top-color:black;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color: black;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color: black;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color: black
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.copyright-text
+{
+  margin:0
+}

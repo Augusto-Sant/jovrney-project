@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_block %}
+<div class="jumbotron">
+        <h2 class="border-bottom border-dark">How to use REST API:</h2>
+        <p class="content_text">The api is about journaling so there is a url dedicated to all journals of a user and
+                their pages.</p>
+        <h2 class="border-dark border-bottom">Authentication</h2>
+        <div class="jumbotron bg-light">
+                <p class="content_text">To use api its necessary to include token inside headers, to get token send a
+                        POST request to
+                        <a class="url_text" href="">/api/auth/</a> with <a class="url_text" href="">auth = {
+                                'username':{username},
+                                'password':{password},
+                                }</a>
+                </p>
+                <p class="content_text">Username and password of this website.</p>
+        </div>
+        <h2 class="border-dark border-bottom">Journal</h2>
+        <div class="jumbotron bg-light">
+                <h4>List all Journals</h4>
+                <p class="content_text">To get a list of all your journals make a GET request to <a
+                                class="url_text">/api/journals/</a></p>
+                <p></p>
+                <h4>Get a Journal</h4>
+                <p class="content_text">To get a journal make a GET request to <a
+                                class="url_text">/api/journals/{journal_id}/</a>
+                </p>
+                <p class="content_text">{journal_id} being the primary key of that journal</p>
+                <p></p>
+                <h4>Update a Journal</h4>
+                <p class="content_text">To get a journal make a PUT request to <a
+                                class="url_text">/api/journals/{journal_id}/update/</a></p>
+                <p></p>
+                <h4>Delete a Journal</h4>
+                <p class="content_text">To get a journal make a DELETE request to <a
+                                class="url_text">/api/journals/{journal_id}/delete/</a></p>
+                <p></p>
+        </div>
+        <h2 class="border-dark border-bottom">Page</h2>
+        <div class="jumbotron bg-light">
+                <h4>List all pages of a Journal</h4>
+                <p class="content_text">To get a list of all pages of a Journal make a GET request to <a
+                                class="url_text">/api/journals/{journal_id}/pages/</a></p>
+                <p></p>
+                <h4>Get a page of a Journal</h4>
+                <p class="content_text">To get a page of a Journal make a GET request to <a
+                                class="url_text">/api/journals/{journal_id}/pages/{page_id}/</a></p>
+                <p class="content_text">{page_id} being the primary key of that page</p>
+                <p></p>
+                <h4>Update a page of a Journal</h4>
+                <p class="content_text">To get a page of a Journal make a UPDATE request to <a
+                                class="url_text">/api/journals/{journal_id}/pages/{page_id}/update/</a></p>
+                <p></p>
+                <h4>Delete a page of a Journal</h4>
+                <p class="content_text">To get a page of a Journal make a DELETE request to <a
+                                class="url_text">/api/journals/{journal_id}/pages/{page_id}/delete/</a></p>
+                <p></p>
+                <h4>Search a Word on all pages</h4>
+                <p class="content_text">Make a get request to
+                        <a class="url_text" href="">Search like /api/journals/{journal_id}/pages/search?q={query}</a>
+                </p>
+                <p class="content_text">{query} being the word or phrase parameter to search in pages</p>
+        </div>
+</div>
+<p class="last_p"></p>
+{% endblock %}
