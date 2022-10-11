@@ -4,6 +4,8 @@ from . import views
 app_name = 'base'
 
 urlpatterns = [
+    ##search
+    path("search",views.SearchView.as_view()),
     ##journals
     path("journals/<int:journal_id>/",views.JournalView.as_view()),
     path("journals/create/",views.JournalCreateView.as_view(),name="create_journal"),

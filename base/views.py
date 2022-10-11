@@ -27,7 +27,7 @@ class IndexView(TemplateView):
             else:
                 results = models.Page.objects.filter(journal__in=journals).filter(content__icontains=query)
             
-            return render(request, "searched_pages.html", {'pages':results})
+            return HttpResponseRedirect(f"/search?q={query}")
         else:
             return self.render_to_response(context)
 
@@ -38,6 +38,26 @@ class AboutView(TemplateView):
 class DocumentationView(TemplateView):
     """Documentation template view"""
     template_name = 'how_to.html'
+
+class SearchView(TemplateView):
+    """Return page with data similar to Search in /search?q={query}"""
+    template_name = "searched_pages.html"
+
+    def get_context_data(self,*args,**kwargs):
+        context = super().get_context_data(**kwargs)
+        query = self.request.GET.get('q')
+        journals = models.Journal.objects.filter(author=self.request.user)
+        if query==None:
+            results = models.Page.objects.filter(journal__in=journals)
+        else:
+            results = models.Page.objects.filter(journal__in=journals).filter(content__icontains=query)
+        context['pages'] = results
+        return context
+
+        
+        
+
+
 
 ### JOURNALS ###
 
