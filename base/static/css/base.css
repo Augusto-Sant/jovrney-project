@@ -7,6 +7,18 @@
     font-size: large;
 }
 
+.register_form{
+  background-color: #F2F2F2;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+  font-size: large;
+}
+
+body{
+  background: url("/static/img/pexels-stephan-seeber-1054218.jpg") 0 no-repeat fixed;
+}
+
 .jumbotronborder {
   background-color: #F2F2F2;
   padding: 2rem 1rem;

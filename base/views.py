@@ -54,11 +54,6 @@ class SearchView(TemplateView):
         context['pages'] = results
         return context
 
-        
-        
-
-
-
 ### JOURNALS ###
 
 class JournalView(TemplateView):

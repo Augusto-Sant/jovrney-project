@@ -5,10 +5,10 @@
 
 {% block body_block %}
 <div class="content">
-    <div class="login_content container shadow-sm mb-auto">
-        <div class="row align-items-stretch no-gutters contact-wrap">
+    <div class="login_content container mb-auto">
+        <div class="row">
             <div class="col-md-6">
-                <div class="form h-100">
+                <div class="register_form h-100 rounded-lg">
                     <h3>Sign In</h3>
                     {% if registered %}
                         <h1>Thanks for registering!</h1>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="h-100"src="{% static 'img/logojov.png'%}" width="550"alt="">
+                <img class="h-100 shadow-sm"src="{% static 'img/logojov.png'%}" width="550"alt="">
             </div>
         </div>
     </div>

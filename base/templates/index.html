@@ -29,7 +29,7 @@
         </form>
     </nav>
 </div>
-<div class="bg-light">
+<div class="jumbotron">
     {% for journal in user_journals %}
     <a class="journal btn btn-simple shadow" href="journals/{{journal.pk}}/" align="center">
         <h3>{{journal.title}}</h3>
@@ -38,6 +38,6 @@
     </a>
     {% endfor %}
 {% endif %}
-    <p class="last_p"></p>
+<p class="last_p"></p>
 </div>
 {% endblock %}
