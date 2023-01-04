@@ -3,9 +3,6 @@
 # jovrney-project
 Journaling Rest API and website using Django
 
-# Website
-<a>https://jadar.pythonanywhere.com/</a>
-
 # About
 
 ![wal](https://user-images.githubusercontent.com/100100069/199966317-ac0ebab6-ae68-4752-a222-f8cfc97b5180.png)
